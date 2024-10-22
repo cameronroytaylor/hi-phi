@@ -1,0 +1,189 @@
+<!-- culture.html (Culture Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | High-Performance Human Interfacing Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        window.addEventListener('load', function() {
+            function adjustShadowPosition() {
+                const button = document.querySelector('.custom-button');
+                const shadow = document.querySelector('.button-shadow');
+
+                // Get the button's position and size
+                const buttonRect = button.getBoundingClientRect();
+
+                // Set shadow dimensions to match the button
+                shadow.style.width = `${buttonRect.width}px`;
+                shadow.style.height = `${buttonRect.height}px`;
+
+                // Position shadow absolutely relative to the page
+                shadow.style.position = 'absolute';
+                shadow.style.left = `${buttonRect.left + window.scrollX + 5}px`;
+                shadow.style.top = `${buttonRect.top + window.scrollY + 5}px`;
+
+                // Ensure the shadow appears behind the button
+                shadow.style.zIndex = parseInt(window.getComputedStyle(button).zIndex) - 1 || -1;
+            }
+
+            // Initial adjustment
+            adjustShadowPosition();
+
+            // Adjust on window resize and scroll
+            window.addEventListener('resize', adjustShadowPosition);
+            window.addEventListener('scroll', adjustShadowPosition);
+            window.addEventListener('click', adjustShadowPosition);
+
+            // JavaScript to handle expand/collapse on click
+            document.querySelectorAll('.toggle-expand').forEach(bullet => {
+                bullet.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.dropdown-icon');
+                    
+                    content.classList.toggle('collapse');
+                    icon.classList.toggle('expanded');
+                });
+            });
+        });
+    </script>
+
+</head>
+<body class="culture-page d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="header text-center d-flex justify-content-center">
+        <img src="assets/hiphi_logo_black_short_name.svg" alt="Lab Logo with Full Name" class="logo" style="width: 250px; height: auto;">
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content flex-grow-1 d-flex justify-content-center align-items-center text-center">
+        <div>
+            <p>The Hi-PHI Lab has a unique culture <br>
+                guided by three primary principles <br>
+                (expand each to learn more):</p>
+
+            <div class="bullet-points-group py-4">
+                <!-- Ownership -->
+                <div class="bullet-point-wrapper">
+                    <div class="bullet-point d-flex align-items-center justify-content-between mb-3 toggle-expand">
+                        <div class="d-flex align-items-center">
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg>
+                            <span class="bullet-text ms-3"><b>Ownership</b></span>
+                        </div>
+                        <svg class="dropdown-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16">
+                            <path d="M2 2 L8 8 L2 14" stroke="black" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="bullet-content collapse">
+                        <small>Each lab member has a vision of what they are contributing to the lab and what they are preparing for after they leave and is empowered to fulfill these responsibilities.</small>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="bullet-point-wrapper">
+                    <div class="bullet-point d-flex align-items-center justify-content-between mb-3 toggle-expand">
+                        <div class="d-flex align-items-center">
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <rect width="16" height="16" rx="3"/>
+                            </svg>
+                            <span class="bullet-text ms-3"><b>Support</b></span>
+                        </div>
+                        <svg class="dropdown-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16">
+                            <path d="M2 2 L8 8 L2 14" stroke="black" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="bullet-content collapse">
+                        <small>We cultivate a helpful and kind environment. We help one another maintain templates for research and career success, we keep track of what works and what doesn't, we celebrate key successes, and we maintain a growth mindset as we iterate. We talk and share information openly with one another, and we liberally and respectfully provide open and honest feedback on our lab operations and on one another's projects.</small>
+                    </div>
+                </div>
+
+                <!-- Tight Feedback -->
+                <div class="bullet-point-wrapper">
+                    <div class="bullet-point d-flex align-items-center justify-content-between mb-3 toggle-expand">
+                        <div class="d-flex align-items-center">
+                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <polygon points="8,0 16,16 0,16"/>
+                            </svg>
+                            <span class="bullet-text ms-3"><b>Tight Feedback</b></span>
+                        </div>
+                        <svg class="dropdown-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16">
+                            <path d="M2 2 L8 8 L2 14" stroke="black" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="bullet-content collapse">
+                        <small>We make data-driven decisions and are motivated by passion for our work. In everything we do, whether in templates or technology, we strive to ask the most important questions first, build minimum viable products, design the simplest experiments to answer our questions, and iterate guided by the data from those experiments.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-wrapper mt-3">
+                <span class="button-shadow"></span>
+                <a href="culture.html" class="custom-button">SEE OUR WORK</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+    <div class="footer-content container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="row d-none d-lg-flex">
+                    <div class="col-2 text-center">
+                        <a href="index.html" class="footer-link">HOME</a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="research.html" class="footer-link">RESEARCH</a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="culture.html" class="footer-link active">CULTURE</a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="publications.html" class="footer-link">PAPERS</a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="people.html" class="footer-link">PEOPLE</a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="join.html" class="footer-link">JOIN US!</a>
+                    </div>
+                </div>
+                <div class="row d-flex d-lg-none">
+                    <div class="col-4 text-start mt-2">
+                        <a href="index.html" class="footer-link">HOME</a>
+                    </div>
+                    <div class="col-4 text-center mt-2">
+                        <a href="research.html" class="footer-link">RESEARCH</a>
+                    </div>
+                    <div class="col-4 text-end mt-2">
+                        <a href="culture.html" class="footer-link active">CULTURE</a>
+                    </div>
+                    <div class="col-4 text-start mt-4">
+                        <a href="publications.html" class="footer-link">PAPERS</a>
+                    </div>
+                    <div class="col-4 text-center mt-4">
+                        <a href="people.html" class="footer-link">PEOPLE</a>
+                    </div>
+                    <div class="col-4 text-end mt-4">
+                        <a href="join.html" class="footer-link">JOIN US!</a>
+                    </div>
+                </div>
+                <div class="text-start mt-5">
+                <img src="assets/BME-White-Horizontal.png" alt="Department Logo" class="footer-logo" style="width: 300px; height: auto;">
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

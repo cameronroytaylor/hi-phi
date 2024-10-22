@@ -48,7 +48,7 @@ header {
 }
 
 .culture-page {
-    background-color: #6BA292; /* Davie Green */
+    background-color: #C4D600; /* Davie Green */
 }
 
 .publications-page {
@@ -70,6 +70,11 @@ p {
 }
 
 a {
+    font-size: 20px; /* Adjust the size as needed */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+small {
     font-size: 20px; /* Adjust the size as needed */
     text-decoration: none; /* Optional: Remove underline from links */
 }
@@ -163,7 +168,7 @@ a {
 }
 
 .culture-page .footer-link.active {
-    color: #6BA292; /* Davie Green */
+    color: #C4D600; /* Davie Green */
 }
 
 .publications-page .footer-link.active {
@@ -198,3 +203,49 @@ a {
 .button-wrapper {
     text-align: center;
 }
+
+.bullet-points-group {
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.bullet-point-wrapper {
+    margin-bottom: 16px;
+}
+
+.bullet-point {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate the V-shape icon when expanded */
+.dropdown-icon.expanded {
+    transform: rotate(90deg);
+}
+
+/* Bullet content styling */
+.bullet-content {
+    padding-left: 40px;
+    margin-top: 8px;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 0;
+}
+
+.bullet-content:not(.collapse) {
+    height: auto;
+}
+
+.journal-icon {
+    transition: transform 0.3s ease;
+}
+
+.journal-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
