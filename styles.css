@@ -56,7 +56,7 @@ header {
 }
 
 .people-page {
-    background-color: #008080; /* Tile Teal */
+    background-color: #00A5AD; /* Tile Teal */
 }
 
 .join-page {
@@ -176,7 +176,7 @@ small {
 }
 
 .people-page .footer-link.active {
-    color: #008080; /* Tile Teal */
+    color: #00A5AD; /* Tile Teal */
 }
 
 .join-page .footer-link.active {
