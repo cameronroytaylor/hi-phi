@@ -1,10 +1,18 @@
 /* General Styles */
 /* Ensure the body stretches to full height */
-body {
+/* Ensure the font matches throughout */
+.intro-text, .bullet-text {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Ensure body takes up full viewport height */
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 992px) {
+    .intro-text, .bullet-text {
+        font-size: 30px;
+    }
 }
 
 /* Flexbox for centering main content */
@@ -115,8 +123,6 @@ a {
     }
 }
 
-
-
 /* Footer */
 .footer {
     background-color: #13294B; /* Navy */
@@ -144,8 +150,53 @@ a {
 }
 
 .footer-link.active {
-    background-color: inherit; /* Each page’s specific background color */
     font-weight: bold;
+}
+
+/* Active Footer Link - Match Page Colors */
+.home-page .footer-link.active {
+    color: #7BAFD4; /* Carolina Blue */
+}
+
+.research-page .footer-link.active {
+    color: #EF5B3E; /* Pyroman Flame */
+}
+
+.culture-page .footer-link.active {
+    color: #6BA292; /* Davie Green */
+}
+
+.publications-page .footer-link.active {
+    color: #9370DB; /* Medium Purple */
+}
+
+.people-page .footer-link.active {
+    color: #008080; /* Tile Teal */
+}
+
+.join-page .footer-link.active {
+    color: #FFD300; /* Sunburst Yellow */
+}
+
+/* Group spacing adjustments */
+.bullet-points-group {
+    padding-top: 30px; /* Space above bullet points group */
+    padding-bottom: 30px; /* Space below bullet points group */
+}
+
+/* Bullet point item spacing */
+.bullet-point {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between bullet points */
+}
+
+.bullet-point svg {
+    flex-shrink: 0;
+}
+
+/* Button alignment */
+.button-wrapper {
+    text-align: center;
 }
 
 /* Mobile Hamburger Menu */
