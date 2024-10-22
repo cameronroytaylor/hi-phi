@@ -1,10 +1,23 @@
 /* General Styles */
+/* Ensure the body stretches to full height */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh; /* Ensure body takes up full viewport height */
 }
 
+/* Flexbox for centering main content */
+.main-content {
+    min-height: 0; /* Prevents any forced height beyond its content */
+    flex-grow: 1; /* Makes sure it takes up available vertical space */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    overflow: auto;
+    padding-top: 20px;
+}
 header {
     background-color: #F4E8DD; /* Campus Sandstone */
     padding: 15px;
@@ -40,17 +53,29 @@ header {
 
 /* Text sizes */
 p {
-    font-size: 24px; /* Adjust the size as needed */
+    font-size: 20px; /* Adjust the size as needed */
     line-height: 1.6; /* Optional: improve readability with better line spacing */
 }
 
 a {
-    font-size: 18px; /* Adjust the size as needed */
+    font-size: 20px; /* Adjust the size as needed */
     text-decoration: none; /* Optional: Remove underline from links */
 }
 
+/* Larger font size for larger screens (lg and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 30px; /* Larger font for wider screens */
+    }
+    a {
+        font-size: 24px; /* Larger font for wider screens */
+    }
+}
+
 .logo {
-    height: 60px;
+    max-width: 100%; /* Ensures the logo never exceeds 90% of the screen width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Optional: Set a max height if needed */
 }
 
 .custom-button {
@@ -160,3 +185,4 @@ a {
         text-align: center;
     }
 }
+
