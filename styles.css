@@ -255,3 +255,16 @@ small {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+.pdf-link {
+    color: #FFD300; /* Sunburst Yellow */
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pdf-link:hover {
+    color: #FFEE00; /* Slightly brighter on hover */
+    text-decoration: underline;
+}
+

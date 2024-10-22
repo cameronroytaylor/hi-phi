@@ -42,9 +42,18 @@
             // JavaScript to handle expand/collapse on click
             document.querySelectorAll('.toggle-expand').forEach(bullet => {
                 bullet.addEventListener('click', function () {
+                    // Collapse any open dropdowns first
+                    document.querySelectorAll('.bullet-content').forEach(content => {
+                        if (content !== this.nextElementSibling) {
+                            content.classList.add('collapse');
+                            content.previousElementSibling.querySelector('.dropdown-icon').classList.remove('expanded');
+                        }
+                    });
+
+                    // Toggle the clicked one
                     const content = this.nextElementSibling;
                     const icon = this.querySelector('.dropdown-icon');
-                    
+
                     content.classList.toggle('collapse');
                     icon.classList.toggle('expanded');
                 });
@@ -125,7 +134,7 @@
 
             <div class="button-wrapper mt-3">
                 <span class="button-shadow"></span>
-                <a href="culture.html" class="custom-button">SEE OUR WORK</a>
+                <a href="publications.html" class="custom-button">SEE OUR WORK</a>
             </div>
         </div>
     </main>
