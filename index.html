@@ -8,6 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function adjustShadowPosition() {
+                const button = document.querySelector('.custom-button');
+                const shadow = document.querySelector('.button-shadow');
+
+                // Get the button's position and size
+                const buttonRect = button.getBoundingClientRect();
+
+                // Set shadow dimensions to match the button
+                shadow.style.width = `${buttonRect.width}px`;
+                shadow.style.height = `${buttonRect.height}px`;
+
+                // Position shadow absolutely relative to the page
+                shadow.style.position = 'absolute';
+                shadow.style.left = `${buttonRect.left + window.scrollX + 5}px`;
+                shadow.style.top = `${buttonRect.top + window.scrollY + 5}px`;
+
+                // Ensure the shadow appears behind the button
+                shadow.style.zIndex = parseInt(window.getComputedStyle(button).zIndex) - 1 || -1;
+            }
+
+            // Initial adjustment
+            adjustShadowPosition();
+
+            // Adjust on window resize and scroll
+            window.addEventListener('resize', adjustShadowPosition);
+            window.addEventListener('scroll', adjustShadowPosition);
+        });
+    </script>
+
+
 </head>
 <body class="home-page d-flex flex-column min-vh-100">
 
@@ -23,12 +56,12 @@
             <img src="assets/hiphi_logo_black.svg" alt="Lab Logo" class="my-4" style="width: 60px; height: auto;">
             <p>We develop transformative<br><b>human-interfacing</b> technologies<br>to enable a new era of human <b>health</b>.</p>
 
-            <div class="d-flex justify-content-center">
+            <div class="button-wrapper mt-5">
+                <span class="button-shadow"></span>
                 <a href="research.html" class="custom-button">LEARN MORE</a>
             </div>
         </div>
     </main>
-
 
     <!-- Footer -->
     <footer class="footer mt-auto">
