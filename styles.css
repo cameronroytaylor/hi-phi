@@ -210,6 +210,12 @@ small {
     margin: 0 auto;
 }
 
+.publications-page .bullet-points-group {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .bullet-point-wrapper {
     margin-bottom: 16px;
 }
