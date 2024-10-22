@@ -97,7 +97,7 @@ a {
     text-decoration: none;
     font-weight: bold;
     z-index: 1; /* Ensure button is above shadow */
-    animation: moveButton 4s infinite;
+    animation: moveButton 3s infinite;
 }
 
 @keyframes moveButton {
