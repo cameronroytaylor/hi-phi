@@ -25,6 +25,10 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+/* Add margin-bottom to the inner content div */
+.main-content > div {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
 
 /* Page-specific Background Colors */
 .home-page {
@@ -78,28 +82,40 @@ a {
     max-height: 200px; /* Optional: Set a max height if needed */
 }
 
+.button-shadow {
+    background-color: #00594C; /* Longleaf Pine */
+    border-radius: 10px;
+    z-index: 0;
+}
+
 .custom-button {
     background-color: #F4E8DD;
     color: black;
     padding: 10px 20px;
-    margin-top: 20px; /* Adjust space above */
-    margin-bottom: 50px; /* Adjust space below */
     border-radius: 10px;
     position: relative;
     text-decoration: none;
     font-weight: bold;
+    z-index: 1; /* Ensure button is above shadow */
+    animation: moveButton 4s infinite;
 }
-.custom-button::after {
-    content: "";
-    background-color: #00594C; /* Longleaf Pine */
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 10px;
+
+@keyframes moveButton {
+    0%, 80% {
+        top: 0;
+        left: 0;
+    }
+    90% {
+        top: 5px; /* Move down */
+        left: 5px; /* Move right */
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
+
+
 
 /* Footer */
 .footer {
@@ -185,4 +201,3 @@ a {
         text-align: center;
     }
 }
-
