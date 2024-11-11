@@ -27,7 +27,7 @@
     padding-top: 20px;
 }
 header {
-    background-color: #F4E8DD; /* Campus Sandstone */
+    background-color: #7BAFD4; /* Carolina Blue */
     padding: 15px;
     display: flex;
     align-items: center;
@@ -40,27 +40,27 @@ header {
 
 /* Page-specific Background Colors */
 .home-page {
-    background-color: #7BAFD4; /* Carolina Blue */
+    background-color: #FFFFFF;
 }
 
 .research-page {
-    background-color: #EF5B3E; /* Pyroman Flame */
+    background-color: #FFFFFF;
 }
 
 .culture-page {
-    background-color: #C4D600; /* Davie Green */
+    background-color: #FFFFFF;
 }
 
 .publications-page {
-    background-color: #9370DB; /* Medium Purple */
+    background-color: #FFFFFF;
 }
 
 .people-page {
-    background-color: #00A5AD; /* Tile Teal */
+    background-color: #FFFFFF;
 }
 
 .join-page {
-    background-color: #FFD300; /* Sunburst Yellow */
+    background-color: #FFFFFF;
 }
 
 /* Text sizes */
@@ -96,13 +96,13 @@ small {
 }
 
 .button-shadow {
-    background-color: #00594C; /* Longleaf Pine */
+    background-color: #13294B; /* Navy */
     border-radius: 10px;
     z-index: 0;
 }
 
 .custom-button {
-    background-color: #F4E8DD;
+    background-color: #7BAFD4; /* Carolina Blue */
     color: black;
     padding: 10px 20px;
     border-radius: 10px;
@@ -151,7 +151,7 @@ small {
 
 .footer-link {
     text-decoration: none;
-    color: #7BAFD4;
+    color: #FFFFFF; /* White */
 }
 
 .footer-link.active {
@@ -164,23 +164,23 @@ small {
 }
 
 .research-page .footer-link.active {
-    color: #EF5B3E; /* Pyroman Flame */
+    color: #7BAFD4; /* Carolina Blue */
 }
 
 .culture-page .footer-link.active {
-    color: #C4D600; /* Davie Green */
+    color: #7BAFD4; /* Carolina Blue */
 }
 
 .publications-page .footer-link.active {
-    color: #9370DB; /* Medium Purple */
+    color: #7BAFD4; /* Carolina Blue */
 }
 
 .people-page .footer-link.active {
-    color: #00A5AD; /* Tile Teal */
+    color: #7BAFD4; /* Carolina Blue */
 }
 
 .join-page .footer-link.active {
-    color: #FFD300; /* Sunburst Yellow */
+    color: #7BAFD4; /* Carolina Blue */
 }
 
 /* Group spacing adjustments */
