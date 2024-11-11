@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="assets/favicons/hiphi_favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="assets/favicons/hiphi_favicon-32x32.png" sizes="32x32">
@@ -64,15 +67,36 @@
 </header>
 
     <!-- Main Content -->
-    <main class="main-content flex-grow-1 d-flex justify-content-center align-items-center text-center">
-        <div>
-            <p>Welcome to the High-Performance <br> Human Interfacing Laboratory!</p>
-            <img src="assets/logos/hiphi_logo_black.svg" alt="Lab Logo" class="my-4" style="width: 60px; height: auto;">
-            <p>We develop transformative<br><b>human interfacing</b> technologies<br>to enable a new era of human <b>health</b>.</p>
+    <main class="main-content flex-grow-1 d-flex justify-content-left align-items-left text-left">
+        <div class="container">
+            <div>
+                <p>Welcome to the High-Performance <span class="d-block d-md-none"></span>Human Interfacing Laboratory!<br>We're a new lab starting Fall 2025, <span class="d-block d-md-none"></span>led by P.I. Cameron Taylor.</p>
+                <img src="assets/logos/hiphi_logo_black.svg" alt="Lab Logo" class="my-1" style="width: 30px; height: auto;">
+                <p>In the Hi-PHI Lab, we develop transformative<br><b>human interfacing</b> technologies<br>that enable a new era of human <b>health</b>.</p>
+                <img src="assets/research_icons/physiology.svg" alt="Human Physiology Icon" class="my-1" style="width: 45px; height: auto;">
+                <p>At MIT, in collaboration with Brown University,<br>Dr. Taylor developed magnetomicrometry,<br>the first technology to be used for real-time direct<br>muscle tissue length tracking in humans.</p>
+            
+                <!-- Embedded YouTube Video -->
+                <div class="ratio ratio-16x9 my-4">
+                    <iframe src="https://www.youtube-nocookie.com/embed/sdDeRgAUsWo?rel=0&modestbranding=1&si=KfVtb16Kgh844Jy2" title="Magnetomicrometry" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
+                </div>
 
-            <div class="button-wrapper mt-5">
-                <span class="button-shadow"></span>
-                <a href="research.html" class="custom-button">LEARN MORE</a>
+                <p>Like the work we do here, magnetomicrometry spanned many fields,<br>including human physiology, electromagnetics, medical device design,<br>electronics, and algorithm design.</p>
+                <img src="assets/research_icons/algorithms.svg" alt="Human Physiology Icon" class="my-1" style="width: 45px; height: auto;">
+                <p>For instance, the first magnetomicrometry <span class="d-block d-md-none"></span>proof of concept<br>was a benchtop test of the<br>world's fastest magnet tracking algorithm.</p>
+
+                <div class="ratio ratio-16x9 my-4">
+                    <iframe src="https://www.youtube-nocookie.com/embed/z83NOA68D8E?rel=0&modestbranding=1&si=1su-dJaByulaeMSn" title="Low Latency Magnet Tracking" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
+                </div>
+
+                <p>The world is flooded with wearable technologies,<br>but none of those sensors can precisely, robustly tell you<br>what is happening inside your nerves and muscles.</p>
+                <i class="fa-regular fa-lightbulb fa-2x"></i>
+                <p>In the Hi-PHI Lab, we're building those missing sensors.<br>We design devices that can sense, stimulate, and image<br>the human body using novel electromagnetic interfaces.<br>Our vision is a world where accessible, minimally-invasive<br>technologies transform lives by restoring ability<br>to persons with movement disorders</p>
+
+                <div class="button-wrapper mt-5">
+                    <span class="button-shadow"></span>
+                    <a href="research.html" class="custom-button">LEARN MORE</a>
+                </div>
             </div>
         </div>
     </main>
