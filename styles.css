@@ -1,0 +1,270 @@
+/* General Styles */
+/* Ensure the body stretches to full height */
+/* Ensure the font matches throughout */
+.intro-text, .bullet-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 992px) {
+    .intro-text, .bullet-text {
+        font-size: 30px;
+    }
+}
+
+/* Flexbox for centering main content */
+.main-content {
+    min-height: 0; /* Prevents any forced height beyond its content */
+    flex-grow: 1; /* Makes sure it takes up available vertical space */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    overflow: auto;
+    padding-top: 20px;
+}
+header {
+    background-color: #F4E8DD; /* Campus Sandstone */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Add margin-bottom to the inner content div */
+.main-content > div {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
+
+/* Page-specific Background Colors */
+.home-page {
+    background-color: #7BAFD4; /* Carolina Blue */
+}
+
+.research-page {
+    background-color: #EF5B3E; /* Pyroman Flame */
+}
+
+.culture-page {
+    background-color: #C4D600; /* Davie Green */
+}
+
+.publications-page {
+    background-color: #9370DB; /* Medium Purple */
+}
+
+.people-page {
+    background-color: #00A5AD; /* Tile Teal */
+}
+
+.join-page {
+    background-color: #FFD300; /* Sunburst Yellow */
+}
+
+/* Text sizes */
+p {
+    font-size: 20px; /* Adjust the size as needed */
+    line-height: 1.6; /* Optional: improve readability with better line spacing */
+}
+
+a {
+    font-size: 20px; /* Adjust the size as needed */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+small {
+    font-size: 20px; /* Adjust the size as needed */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+/* Larger font size for larger screens (lg and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 30px; /* Larger font for wider screens */
+    }
+    a {
+        font-size: 24px; /* Larger font for wider screens */
+    }
+}
+
+.logo {
+    max-width: 100%; /* Ensures the logo never exceeds 90% of the screen width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Optional: Set a max height if needed */
+}
+
+.button-shadow {
+    background-color: #00594C; /* Longleaf Pine */
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.custom-button {
+    background-color: #F4E8DD;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1; /* Ensure button is above shadow */
+    animation: moveButton 3s infinite;
+}
+
+@keyframes moveButton {
+    0%, 80% {
+        top: 0;
+        left: 0;
+    }
+    90% {
+        top: 5px; /* Move down */
+        left: 5px; /* Move right */
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #13294B; /* Navy */
+    padding: 15px;
+    color: #7BAFD4; /* Carolina Blue */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-links {
+    gap: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #7BAFD4;
+}
+
+.footer-link.active {
+    font-weight: bold;
+}
+
+/* Active Footer Link - Match Page Colors */
+.home-page .footer-link.active {
+    color: #7BAFD4; /* Carolina Blue */
+}
+
+.research-page .footer-link.active {
+    color: #EF5B3E; /* Pyroman Flame */
+}
+
+.culture-page .footer-link.active {
+    color: #C4D600; /* Davie Green */
+}
+
+.publications-page .footer-link.active {
+    color: #9370DB; /* Medium Purple */
+}
+
+.people-page .footer-link.active {
+    color: #00A5AD; /* Tile Teal */
+}
+
+.join-page .footer-link.active {
+    color: #FFD300; /* Sunburst Yellow */
+}
+
+/* Group spacing adjustments */
+.bullet-points-group {
+    padding-top: 30px; /* Space above bullet points group */
+    padding-bottom: 30px; /* Space below bullet points group */
+}
+
+/* Bullet point item spacing */
+.bullet-point {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between bullet points */
+}
+
+.bullet-point svg {
+    flex-shrink: 0;
+}
+
+/* Button alignment */
+.button-wrapper {
+    text-align: center;
+}
+
+.bullet-points-group {
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.publications-page .bullet-points-group {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bullet-point-wrapper {
+    margin-bottom: 16px;
+}
+
+.bullet-point {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate the V-shape icon when expanded */
+.dropdown-icon.expanded {
+    transform: rotate(90deg);
+}
+
+/* Bullet content styling */
+.bullet-content {
+    padding-left: 40px;
+    margin-top: 8px;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 0;
+}
+
+.bullet-content:not(.collapse) {
+    height: auto;
+}
+
+.journal-icon {
+    transition: transform 0.3s ease;
+}
+
+.journal-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.pdf-link {
+    color: #FFD300; /* Sunburst Yellow */
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pdf-link:hover {
+    color: #FFEE00; /* Slightly brighter on hover */
+    text-decoration: underline;
+}
+
