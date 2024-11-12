@@ -58,10 +58,34 @@
 </head>
 <body class="research-page d-flex flex-column min-vh-100">
 
-    <!-- Header -->
-    <header class="header text-center d-flex justify-content-center">
-    <img src="assets/logos/hiphi_logo_black_short_name.svg" alt="Lab Logo with Full Name" class="logo" style="width: 250px; height: auto;">
-</header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/logos/hiphi_logo_black_short_name.svg" alt="Lab Logo with Full Name" class="logo" style="width: 250px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="publications.html">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="people.html">PEOPLE</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="join.html">JOIN US!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="main-content flex-grow-1 d-flex justify-content-center align-items-center text-center">
@@ -96,53 +120,20 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto">
-        <div class="footer-content container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-10 mx-auto">
-                    <div class="row d-none d-lg-flex">
-                        <div class="col-2 text-center">
-                            <a href="index.html" class="footer-link">HOME</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="projects.html" class="footer-link active">PROJECTS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="publications.html" class="footer-link">PAPERS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="news.html" class="footer-link">NEWS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="people.html" class="footer-link">PEOPLE</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="join.html" class="footer-link">JOIN US!</a>
-                        </div>
-                    </div>
-                    <div class="row d-flex d-lg-none">
-                        <div class="col-4 text-start mt-2">
-                            <a href="index.html" class="footer-link">HOME</a>
-                        </div>
-                        <div class="col-4 text-center mt-2">
-                            <a href="projects.html" class="footer-link active">PROJECTS</a>
-                        </div>
-                        <div class="col-4 text-end mt-2">
-                            <a href="publications.html" class="footer-link">PAPERS</a>
-                        </div>
-                        <div class="col-4 text-start mt-4">
-                            <a href="news.html" class="footer-link">NEWS</a>
-                        </div>
-                        <div class="col-4 text-center mt-4">
-                            <a href="people.html" class="footer-link">PEOPLE</a>
-                        </div>
-                        <div class="col-4 text-end mt-4">
-                            <a href="join.html" class="footer-link">JOIN US!</a>
-                        </div>
-                    </div>
-                    <div class="text-start mt-5">
-                        <img src="assets/logos/BME-White-Horizontal.png" alt="Department Logo" class="footer-logo" style="width: 300px; height: auto;">
-                    </div>
+    <footer class="footer mt-auto py-3 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left-aligned department logo -->
+                <div class="col-md-6 text-start">
+                    <img src="assets/logos/BME-White-Horizontal.png" alt="Department Logo" class="footer-logo" style="width: 300px; height: auto;">
+                </div>
+
+                <!-- Right-aligned contact information -->
+                <div class="col-md-6 text-md-end text-start mt-3 mt-md-0">
+                    <p class="mb-1 fw- small">CONTACT</p>
+                    <p class="mb-0 small">Cameron R. Taylor, Ph.D.<br>
+                        Assistant Professor of Biomedical Engineering<br>
+                        ctaylor7@unc.edu</p>
                 </div>
             </div>
         </div>

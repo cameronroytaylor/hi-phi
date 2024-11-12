@@ -61,39 +61,63 @@
 </head>
 <body class="home-page d-flex flex-column min-vh-100">
 
-    <!-- Header -->
-    <header class="header text-center d-flex justify-content-center">
-        <img src="assets/logos/hiphi_logo_black_with_name.svg" alt="Lab Logo with Full Name" class="logo" style="width: 500px; height: auto;">
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/logos/hiphi_logo_black_short_name.svg" alt="Lab Logo with Full Name" class="logo" style="width: 250px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="publications.html">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="people.html">PEOPLE</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="join.html">JOIN US!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="main-content flex-grow-1 d-flex justify-content-left align-items-left text-left">
         <div class="container">
             <div>
-                <p>Welcome to the High-Performance <span class="d-block d-md-none"></span>Human Interfacing Laboratory!<br>We're a new lab starting Fall 2025, <span class="d-block d-md-none"></span>led by P.I. Cameron Taylor.</p>
+                <p>In the High-Performance Human Interfacing Laboratory (Hi-PHI Lab) at UNC, we develop transformative <b>human interfacing</b> technologies to enable a new era of human <b>health</b>.</p>
+                <p>The world is flooded with wearable technologies, but none of those sensors precisely, robustly tell you what is happening inside your nerves and muscles. In the Hi-PHI Lab, we're building those needed sensors. </p>
+                <p>We design devices that can sense, stimulate, and image the human body using novel electromagnetic strategies. Our vision is a world where accessible, minimally-invasive technologies transform lives by restoring ability to persons with movement disorders.</p>
                 <img src="assets/logos/hiphi_logo_black.svg" alt="Lab Logo" class="my-1" style="width: 30px; height: auto;">
-                <p>In the Hi-PHI Lab, we develop transformative<br><b>human interfacing</b> technologies<br>that enable a new era of human <b>health</b>.</p>
-                <img src="assets/research_icons/physiology.svg" alt="Human Physiology Icon" class="my-1" style="width: 45px; height: auto;">
-                <p>At MIT, in collaboration with Brown University,<br>Dr. Taylor developed magnetomicrometry,<br>the first technology to be used for real-time direct<br>muscle tissue length tracking in humans.</p>
             
                 <!-- Embedded YouTube Video -->
-                <div class="ratio ratio-16x9 my-4">
-                    <iframe src="https://www.youtube-nocookie.com/embed/sdDeRgAUsWo?rel=0&modestbranding=1&si=KfVtb16Kgh844Jy2" title="Magnetomicrometry" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9 my-4">
+                                <iframe src="https://www.youtube-nocookie.com/embed/sdDeRgAUsWo?rel=0&modestbranding=1&si=KfVtb16Kgh844Jy2" title="Magnetomicrometry" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ratio ratio-16x9 my-4">
+                                <iframe src="https://www.youtube-nocookie.com/embed/z83NOA68D8E?rel=0&modestbranding=1&si=1su-dJaByulaeMSn" title="Low Latency Magnet Tracking" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <p>And to develop magnetomicrometry,<br>he had to first develop the world's fastest<br>magnet tracking algorithm.</p>
+                <p>In collaboration with MIT and Brown University, we developed magnetomicrometry, the first technology to be used for real-time direct muscle tissue length tracking in humans.</p>
 
-                <div class="ratio ratio-16x9 my-4">
-                    <iframe src="https://www.youtube-nocookie.com/embed/z83NOA68D8E?rel=0&modestbranding=1&si=1su-dJaByulaeMSn" title="Low Latency Magnet Tracking" loading="lazy" allow="autoplay; picture-in-picture;" allowfullscreen></iframe>
-                </div>
-
-                <p>Magnetomicrometry succintly describes the types<br>of transformational technologies we build.</p>
-
-                <p><b>The Hi-PHI Lab: What We Do, and Why</b></p>
-
-                <p>The world is flooded with wearable technologies,<br>but none of those sensors can precisely, robustly tell you<br>what is happening inside your nerves and muscles.</p>
-                <i class="fa-regular fa-lightbulb fa-2x"></i>
-                <p>In the Hi-PHI Lab, we're building those missing sensors.<br>We design devices that can sense, stimulate, and image<br>the human body using novel electromagnetic strategies.<br>Our vision is a world where accessible, minimally-invasive<br>technologies transform lives by restoring ability<br>to persons with movement disorders</p>
+                <p>We're a new lab starting Fall 2025, led by P.I. Cameron Taylor.</p>
 
                 <div class="button-wrapper mt-5">
                     <span class="button-shadow"></span>
@@ -104,53 +128,20 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto">
-        <div class="footer-content container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-10 mx-auto">
-                    <div class="row d-none d-lg-flex">
-                        <div class="col-2 text-center">
-                            <a href="index.html" class="footer-link active">HOME</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="projects.html" class="footer-link">PROJECTS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="publications.html" class="footer-link">PAPERS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="news.html" class="footer-link">NEWS</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="people.html" class="footer-link">PEOPLE</a>
-                        </div>
-                        <div class="col-2 text-center">
-                            <a href="join.html" class="footer-link">JOIN US!</a>
-                        </div>
-                    </div>
-                    <div class="row d-flex d-lg-none">
-                        <div class="col-4 text-start mt-2">
-                            <a href="index.html" class="footer-link active">HOME</a>
-                        </div>
-                        <div class="col-4 text-center mt-2">
-                            <a href="projects.html" class="footer-link">PROJECTS</a>
-                        </div>
-                        <div class="col-4 text-end mt-2">
-                            <a href="publications.html" class="footer-link">PAPERS</a>
-                        </div>
-                        <div class="col-4 text-start mt-4">
-                            <a href="news.html" class="footer-link">NEWS</a>
-                        </div>
-                        <div class="col-4 text-center mt-4">
-                            <a href="people.html" class="footer-link">PEOPLE</a>
-                        </div>
-                        <div class="col-4 text-end mt-4">
-                            <a href="join.html" class="footer-link">JOIN US!</a>
-                        </div>
-                    </div>
-                    <div class="text-start mt-5">
-                        <img src="assets/logos/BME-White-Horizontal.png" alt="Department Logo" class="footer-logo" style="width: 300px; height: auto;">
-                    </div>
+    <footer class="footer mt-auto py-3 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left-aligned department logo -->
+                <div class="col-md-6 text-start">
+                    <img src="assets/logos/BME-White-Horizontal.png" alt="Department Logo" class="footer-logo" style="width: 300px; height: auto;">
+                </div>
+
+                <!-- Right-aligned contact information -->
+                <div class="col-md-6 text-md-end text-start mt-3 mt-md-0">
+                    <p class="mb-1 fw- small">CONTACT</p>
+                    <p class="mb-0 small">Cameron R. Taylor, Ph.D.<br>
+                        Assistant Professor of Biomedical Engineering<br>
+                        ctaylor7@unc.edu</p>
                 </div>
             </div>
         </div>
