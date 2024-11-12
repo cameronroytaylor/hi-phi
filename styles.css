@@ -198,3 +198,100 @@ small {
     text-decoration: underline;
 }
 
+/* General Styles */
+/* Use box-sizing to include padding and border in element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Publications Styling */
+.paper-year {
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.paper-title {
+    font-weight: bold;
+    color: #7BAFD4; /* Carolina Blue */
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.paper-authors {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.paper-abstract {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.download-link {
+    color: #7BAFD4; /* Carolina Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+.paper-entry {
+    margin-bottom: 30px;
+}
+
+.year-section {
+    margin-bottom: 50px;
+}
+
+/* Remove max-width and centering to allow full width */
+.publications-list {
+    text-align: left;
+}
+
+/* Adjust main content alignment */
+.main-content {
+    min-height: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .paper-year {
+        font-size: 1.5rem;
+    }
+
+    .paper-title {
+        font-size: 1.25rem;
+    }
+
+    .paper-authors,
+    .paper-abstract {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Word wrapping to prevent overflow */
+.paper-title,
+.paper-authors,
+.paper-abstract {
+    word-wrap: break-word;
+}
