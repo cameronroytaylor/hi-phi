@@ -295,3 +295,38 @@ img {
 .paper-abstract {
     word-wrap: break-word;
 }
+
+/* Styles for the Principal Investigator Section */
+.square-box {
+    width: 400px;
+    height: 400px;
+    background-color: #7BAFD4; /* Carolina Blue */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.square-box img {
+    max-width: 100%;
+    max-height: 65%;
+    object-fit: contain;
+}
+
+.square-box p {
+    color: #000; /* Adjust text color if needed */
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1em; /* Added this line to make the text smaller */**
+}
+
+@media (max-width: 767px) {
+    /* Responsive adjustments for smaller screens */
+    .square-box {
+        width: 100%;
+        height: auto;
+    }
+}
