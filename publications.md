@@ -24,5 +24,4 @@ extra_scripts: publications
             </div>
         </div>
     </div>
-    </div>
 </main>

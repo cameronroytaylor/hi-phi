@@ -5,14 +5,8 @@
 {% for paper in year_group.papers %}
                         <div class="paper-entry">
                             <h3 class="paper-title">{{ paper.title | upcase }}</h3>
-{% if paper.authors_single_paragraph %}
-                            <p class="paper-authors">{% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}. <i>{{ paper.venue }}</i>
-                            </p>
-{% else %}
-                            <p class="paper-authors">
-                                {% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}. <i>{{ paper.venue }}</i>
-                            </p>
-{% endif %}
+{% capture author_line %}{% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}{% endcapture %}
+                            <p class="paper-authors">{{ author_line | strip }}. <i>{{ paper.venue }}</i></p>
                             <p class="paper-abstract">
                                 {{ paper.abstract }} <a href="{{ paper.pdf }}" class="download-link"{% if paper.duplicate_download_class %} class="download-link"{% endif %}>Download the paper.</a>
                             </p>

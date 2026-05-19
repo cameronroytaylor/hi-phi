@@ -17,5 +17,4 @@ legacy_footer: news
             <a href="people.html" class="custom-button">MEET THE TEAM</a>
         </div>
     </div>
-    </div>
 </main>
