@@ -25,6 +25,58 @@ journal_icon_rows:
       alt: "MIT Technology Review"
 
 publications_by_year:
+  - year: 2026
+    papers:
+      - title: "A wireless magnetic implant system for continuous neuromuscular sensing"
+        authors:
+          - { name: "Christopher C. Shallal", equal_contribution: true }
+          - { name: "Cameron R. Taylor", highlight: true, equal_contribution: true }
+          - { name: "Seong Ho Yeon" }
+          - { name: "Richard J. Casler" }
+          - { name: "Dara Oseyemi" }
+          - { name: "Guillermo Herrera-Arcos" }
+          - { name: "Junqing Qiao" }
+          - { name: "Tony Shu" }
+          - { name: "Jay Xu" }
+          - { name: "Daniel Levine" }
+          - { name: "Ana Rajcevic" }
+          - { name: "Sean Boerhout" }
+          - { name: "Aimee Liu" }
+          - { name: "Ellen G. Clarrissimeaux" }
+          - { name: "Joseph A. Paradiso" }
+          - { name: "Rickard Brånemark" }
+          - { name: "Matthew J. Carty" }
+          - { name: "Hugh M. Herr" }
+        venue: "(Under Review)"
+        abstract: "Magnetomicrometry provides more accurate and responsive neuroprosthetic control in comparison with both surface and implanted electromyography."
+        pdf: "https://www.medrxiv.org/content/medrxiv/early/2025/11/22/2025.11.17.25340274.full.pdf"
+      - title: "A critical orientation on muscle marker placement: Multiple angles to consider"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Rachel C. Fleming" }
+          - { name: "William H. Clark" }
+          - { name: "Richard L. Marsh" }
+          - { name: "Thomas J. Roberts" }
+        venue: "Journal of Biomechanics"
+        abstract: "When fascicles shorten, some points in a muscle can actually get farther apart."
+        pdf: "assets/publications/muscle_marker_placement.pdf"
+      - title: "MRI Safety Considerations for Permanent Magnet Implants in Muscle"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Eric D. Anttila" }
+          - { name: "Steven J. Charlebois" }
+          - { name: "David C. Gross" }
+          - { name: "Amanda F. Taylor" }
+          - { name: "Jose O. Negron-Garcia" }
+          - { name: "Christopher E. Suckow" }
+          - { name: "L. Tiffany Lyle" }
+          - { name: "Scott R. Hooten" }
+          - { name: "Seong Ho Yeon" }
+          - { name: "Christopher C. Shallal" }
+          - { name: "Hugh M. Herr" }
+        venue: "Journal of Magnetic Resonance Imaging"
+        abstract: "People with the magnetic implants tested in this study can safely receive MR imaging up to 1.5 T."
+        pdf: "assets/publications/mri_safety_magnetic_implants.pdf"
   - year: 2025
     papers:
       - title: "Metamorphic flexure bearings for extended range of motion"
@@ -35,9 +87,27 @@ publications_by_year:
           - { name: "He Kai Lim" }
           - { name: "Jonathan B. Hopkins" }
           - { name: "Tyler R. Clites" }
-        venue: "ASME Journal of Mechanical Design (2025)"
+        venue: "ASME Journal of Mechanical Design"
         abstract: "Metamorphic flexure bearings extend compliant mechanism benefits with a conventional bearing range of motion."
         pdf: "assets/publications/metamorphic_flexure_bearings.pdf"
+      - title: "Design of a controllable axial-flux Halbach array for magnetic suspension tasks"
+        authors:
+          - { name: "Will Flanagan" }
+          - { name: "He Kai Lim" }
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Tyler R. Clites" }
+        venue: "IEEE Access"
+        abstract: "Rotating one one-sided magnetic ring inside another allows you to control the amount of magnetic force you exert from a distance."
+        pdf: "assets/publications/axial_flux_halbach_array.pdf"
+      - title: "Discrete Approximation of Permanent Magnet Arrays for Mechatronic Applications"
+        authors: 
+          - { name: "He Kai Lim" }
+          - { name: "Will Flanagan" }
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Tyler R. Clites" }
+        venue: "IEEE/ASME Transactions on Mechatronics"
+        abstract: "You can now build custom magnetic fields like you're building with LEGOs."
+        pdf: "assets/publications/discrete_magnetic_approximation.pdf"
   - year: 2024
     papers:
       - title: "Mechanoneural interfaces for bionic integration"
@@ -46,7 +116,7 @@ publications_by_year:
           - { name: "Guillermo Herrera-Arcos" }
           - { name: "Cameron R. Taylor", highlight: true }
           - { name: "Hugh M. Herr" }
-        venue: "Nature Reviews Bioengineering (2024)"
+        venue: "Nature Reviews Bioengineering"
         abstract: "Surgical engineering enables us to provide improved interfaces to the human body."
         pdf: "https://dam-prod2.media.mit.edu/x/2024/03/06/s44222-024-00151-y-1.pdf"
   - year: 2023
@@ -58,7 +128,7 @@ publications_by_year:
           - { name: "Nilmini H. Ratnasena" }
           - { name: "Joel M. Cohen" }
           - { name: "Hugh M. Herr" }
-        venue: "Frontiers in Bioengineering and Biotechnology (2023)"
+        venue: "Frontiers in Bioengineering and Biotechnology"
         abstract: "When rigorously manufactured, magnetic bead implants are fully biocompatible for implantation in humans."
         pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1290453/pdf"
         duplicate_download_class: true
@@ -75,7 +145,7 @@ publications_by_year:
           - { name: "Roderick T. Bronson" }
           - { name: "Thomas J. Roberts" }
           - { name: "Hugh M. Herr" }
-        venue: "Frontiers In Bioengineering And Biotechnology (2022)"
+        venue: "Frontiers In Bioengineering And Biotechnology"
         abstract: "When rigorously manufactured, magnetic bead implants can be safely used as muscle tracking markers in humans."
         pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2022.1010276/pdf"
         duplicate_download_class: true
@@ -88,7 +158,7 @@ publications_by_year:
           - { name: "Mary Kate O'Donnell" }
           - { name: "Thomas J. Roberts" }
           - { name: "Hugh M. Herr" }
-        venue: "Frontiers In Bioengineering And Biotechnology (2022)"
+        venue: "Frontiers In Bioengineering And Biotechnology"
         abstract: "Magnetomicrometry enables untethered muscle tissue length tracking in freely-moving animals."
         pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2022.1010275/pdf"
         duplicate_download_class: true
@@ -103,7 +173,7 @@ publications_by_year:
           - { name: "Thomas J. Roberts" }
           - { name: "Hugh M. Herr" }
         and_before_last: true
-        venue: "Science Robotics (2021)"
+        venue: "Science Robotics"
         abstract: "Magnetic beads can be used for real-time minimally-invasive muscle tissue length tracking."
         pdf: "https://dam-prod2.media.mit.edu/x/2021/08/19/Magnetomicrometry_AuthorsVersion.pdf"
         duplicate_download_class: true
@@ -118,7 +188,7 @@ publications_by_year:
           - { name: "Hosea Siu" }
           - { name: "Lora Brugnaro" }
           - { name: "Adriana Mallozzi" }
-        venue: "Extended Abstracts Of The 2020 CHI Conference On Human Factors In Computing Systems (2020)"
+        venue: "Extended Abstracts Of The 2020 CHI Conference On Human Factors In Computing Systems"
         abstract: "Assistive technology hackathons provide a powerful educational and service experience for engineering students."
         pdf: "https://dl.acm.org/doi/abs/10.1145/3334480.3383096"
         duplicate_download_class: true
@@ -130,7 +200,7 @@ publications_by_year:
           - { name: "Cameron R. Taylor", highlight: true }
           - { name: "Haley G. Abramson" }
           - { name: "Hugh M. Herr" }
-        venue: "IEEE Sensors Journal (2019)"
+        venue: "IEEE Sensors Journal"
         abstract: "Magnets can be tracked at high speed by using common subexpression elimination to calculate the optimization gradient."
         pdf: "assets/publications/low_latency_magnet_tracking_authors_version.pdf"
   - year: 2017
@@ -145,7 +215,7 @@ publications_by_year:
           - { name: "Cameron R. Taylor", highlight: true }
           - { name: "Anthony N. Zorzos" }
           - { name: "Hugh M. Herr" }
-        venue: "Science Robotics (2017)"
+        venue: "Science Robotics"
         abstract: "Surgical attachment of the agonist and antagonist muscles after amputation restores proprioceptive feedback."
         pdf: "https://dam-prod2.media.mit.edu/x/2018/05/29/Srinivasanetal-2017-On%20prosthetic%20control.pdf"
         duplicate_download_class: true
