@@ -1,0 +1,10 @@
+            <!-- New Journal Icons Section -->
+            <div class="journal-icons d-flex flex-wrap justify-content-center align-items-center mb-2 mt-4">
+{% for row in site.data.publications.journal_icon_rows %}
+                <div>
+{% for icon in row %}
+                    <img src="{{ icon.src }}" title="{{ icon.title }}" alt="{{ icon.alt }}" class="journal-icon mx-3" style="width: 60px; height: auto;">
+{% endfor %}
+                </div>
+{% endfor %}
+            </div>

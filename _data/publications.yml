@@ -1,0 +1,152 @@
+journal_icon_rows:
+  - - src: "assets/journal_icons/sci_rob.png"
+      title: "Science Robotics"
+      alt: "Science Robotics"
+    - src: "assets/journal_icons/physics_world.png"
+      title: "Physics World"
+      alt: "Physics World"
+    - src: "assets/journal_icons/ieee_sens.png"
+      title: "IEEE Sensors Journal"
+      alt: "IEEE Sensors"
+    - src: "assets/journal_icons/electronic_design.png"
+      title: "Electronic Design"
+      alt: "Electronic Design"
+  - - src: "assets/journal_icons/frontiers.png"
+      title: "Frontiers in Bioengineering and Biotechnology"
+      alt: "Frontiers"
+    - src: "assets/journal_icons/mashable.png"
+      title: "Mashable"
+      alt: "Mashable"
+    - src: "assets/journal_icons/nat_rev_bioeng.png"
+      title: "Nature Reviews Bioengineering"
+      alt: "Nature Reviews Bioengineering"
+    - src: "assets/journal_icons/tech_review.png"
+      title: "MIT Technology Review"
+      alt: "MIT Technology Review"
+
+publications_by_year:
+  - year: 2025
+    papers:
+      - title: "Metamorphic flexure bearings for extended range of motion"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Will Flanagan" }
+          - { name: "Talmage H. Jones" }
+          - { name: "He Kai Lim" }
+          - { name: "Jonathan B. Hopkins" }
+          - { name: "Tyler R. Clites" }
+        venue: "ASME Journal of Mechanical Design (2025)"
+        abstract: "Metamorphic flexure bearings extend compliant mechanism benefits with a conventional bearing range of motion."
+        pdf: "assets/publications/metamorphic_flexure_bearings.pdf"
+  - year: 2024
+    papers:
+      - title: "Mechanoneural interfaces for bionic integration"
+        authors:
+          - { name: "Tony Shu" }
+          - { name: "Guillermo Herrera-Arcos" }
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Hugh M. Herr" }
+        venue: "Nature Reviews Bioengineering (2024)"
+        abstract: "Surgical engineering enables us to provide improved interfaces to the human body."
+        pdf: "https://dam-prod2.media.mit.edu/x/2024/03/06/s44222-024-00151-y-1.pdf"
+  - year: 2023
+    papers:
+      - title: "Non-pyrogenicity and biocompatibility of parylene-coated magnetic bead implants"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Joshua K. Nott" }
+          - { name: "Nilmini H. Ratnasena" }
+          - { name: "Joel M. Cohen" }
+          - { name: "Hugh M. Herr" }
+        venue: "Frontiers in Bioengineering and Biotechnology (2023)"
+        abstract: "When rigorously manufactured, magnetic bead implants are fully biocompatible for implantation in humans."
+        pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1290453/pdf"
+        duplicate_download_class: true
+  - year: 2022
+    papers:
+      - title: "Clinical viability of magnetic bead implants in muscle"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true, equal_contribution: true }
+          - { name: "William H. Clark", equal_contribution: true }
+          - { name: "Ellen G. Clarrissimeaux" }
+          - { name: "Seong Ho Yeon" }
+          - { name: "Matthew J. Carty" }
+          - { name: "Stuart R. Lipsitz" }
+          - { name: "Roderick T. Bronson" }
+          - { name: "Thomas J. Roberts" }
+          - { name: "Hugh M. Herr" }
+        venue: "Frontiers In Bioengineering And Biotechnology (2022)"
+        abstract: "When rigorously manufactured, magnetic bead implants can be safely used as muscle tracking markers in humans."
+        pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2022.1010276/pdf"
+        duplicate_download_class: true
+      - title: "Untethered muscle tracking using magnetomicrometry"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true, equal_contribution: true }
+          - { name: "Seong Ho Yeon", equal_contribution: true }
+          - { name: "William H. Clark" }
+          - { name: "Ellen G. Clarrissimeaux" }
+          - { name: "Mary Kate O'Donnell" }
+          - { name: "Thomas J. Roberts" }
+          - { name: "Hugh M. Herr" }
+        venue: "Frontiers In Bioengineering And Biotechnology (2022)"
+        abstract: "Magnetomicrometry enables untethered muscle tissue length tracking in freely-moving animals."
+        pdf: "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2022.1010275/pdf"
+        duplicate_download_class: true
+  - year: 2021
+    papers:
+      - title: "Magnetomicrometry"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Shriya S. Srinivasan" }
+          - { name: "Seong Ho Yeon" }
+          - { name: "Mary Kate O'Donnell" }
+          - { name: "Thomas J. Roberts" }
+          - { name: "Hugh M. Herr" }
+        and_before_last: true
+        venue: "Science Robotics (2021)"
+        abstract: "Magnetic beads can be used for real-time minimally-invasive muscle tissue length tracking."
+        pdf: "https://dam-prod2.media.mit.edu/x/2021/08/19/Magnetomicrometry_AuthorsVersion.pdf"
+        duplicate_download_class: true
+  - year: 2020
+    papers:
+      - title: "ATHack: Co-design and education in assistive technology development"
+        authors:
+          - { name: "Jaya Narain" }
+          - { name: "Ishwarya Ananthabhotla" }
+          - { name: "Samuel Mendez" }
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Hosea Siu" }
+          - { name: "Lora Brugnaro" }
+          - { name: "Adriana Mallozzi" }
+        venue: "Extended Abstracts Of The 2020 CHI Conference On Human Factors In Computing Systems (2020)"
+        abstract: "Assistive technology hackathons provide a powerful educational and service experience for engineering students."
+        pdf: "https://dl.acm.org/doi/abs/10.1145/3334480.3383096"
+        duplicate_download_class: true
+        authors_single_paragraph: true
+  - year: 2019
+    papers:
+      - title: "Low-latency tracking of multiple permanent magnets"
+        authors:
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Haley G. Abramson" }
+          - { name: "Hugh M. Herr" }
+        venue: "IEEE Sensors Journal (2019)"
+        abstract: "Magnets can be tracked at high speed by using common subexpression elimination to calculate the optimization gradient."
+        pdf: "assets/publications/low_latency_magnet_tracking_authors_version.pdf"
+  - year: 2017
+    papers:
+      - title: "On prosthetic control: A regenerative agonist-antagonist myoneural interface"
+        authors:
+          - { name: "Shriya S. Srinivasan" }
+          - { name: "Matthew J. Carty" }
+          - { name: "Peter W. Calvaresi" }
+          - { name: "Tyler R. Clites" }
+          - { name: "Benjamin E. Maimon" }
+          - { name: "Cameron R. Taylor", highlight: true }
+          - { name: "Anthony N. Zorzos" }
+          - { name: "Hugh M. Herr" }
+        venue: "Science Robotics (2017)"
+        abstract: "Surgical attachment of the agonist and antagonist muscles after amputation restores proprioceptive feedback."
+        pdf: "https://dam-prod2.media.mit.edu/x/2018/05/29/Srinivasanetal-2017-On%20prosthetic%20control.pdf"
+        duplicate_download_class: true
+        authors_single_paragraph: true

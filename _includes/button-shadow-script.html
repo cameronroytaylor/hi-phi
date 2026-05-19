@@ -1,0 +1,53 @@
+    <script>
+        window.addEventListener('load', function() {
+            function adjustShadowPosition() {
+                const button = document.querySelector('.custom-button');
+                const shadow = document.querySelector('.button-shadow');
+
+                // Get the button's position and size
+                const buttonRect = button.getBoundingClientRect();
+
+                // Set shadow dimensions to match the button
+                shadow.style.width = `${buttonRect.width}px`;
+                shadow.style.height = `${buttonRect.height}px`;
+
+                // Position shadow absolutely relative to the page
+                shadow.style.position = 'absolute';
+                shadow.style.left = `${buttonRect.left + window.scrollX + 5}px`;
+                shadow.style.top = `${buttonRect.top + window.scrollY + 5}px`;
+
+                // Ensure the shadow appears behind the button
+                shadow.style.zIndex = parseInt(window.getComputedStyle(button).zIndex) - 1 || -1;
+            }
+
+            // Initial adjustment
+            adjustShadowPosition();
+
+            // Adjust on window resize and scroll
+            window.addEventListener('resize', adjustShadowPosition);
+            window.addEventListener('scroll', adjustShadowPosition);
+            {% if page.extra_scripts == "publications" or page.extra_scripts == "legacy" %}
+            window.addEventListener('click', adjustShadowPosition);
+
+            // JavaScript to handle expand/collapse on click
+            document.querySelectorAll('.toggle-expand').forEach(bullet => {
+                bullet.addEventListener('click', function () {
+                    // Collapse any open dropdowns first
+                    document.querySelectorAll('.bullet-content').forEach(content => {
+                        if (content !== this.nextElementSibling) {
+                            content.classList.add('collapse');
+                            content.previousElementSibling.querySelector('.dropdown-icon').classList.remove('expanded');
+                        }
+                    });
+
+                    // Toggle the clicked one
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.dropdown-icon');
+
+                    content.classList.toggle('collapse');
+                    icon.classList.toggle('expanded');
+                });
+            });
+            {% endif %}
+        });
+    </script>

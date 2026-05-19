@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+
+# macOS system Ruby (2.6) cannot run github-pages or Bundler 4.x.
+if [ -d "/opt/homebrew/opt/ruby@3.3/bin" ]; then
+  export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+elif [ -d "/usr/local/opt/ruby@3.3/bin" ]; then
+  export PATH="/usr/local/opt/ruby@3.3/bin:$PATH"
+fi
+
+echo "Using: $(ruby --version)"
+bundle config set --local path 'vendor/bundle'
+bundle install
+exec bundle exec jekyll serve "$@"

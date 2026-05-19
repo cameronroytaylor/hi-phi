@@ -1,0 +1,23 @@
+                <div class="publications-list">
+{% for year_group in site.data.publications.publications_by_year %}
+                    <div class="year-section">
+                        <h2 class="paper-year">{{ year_group.year }}</h2>
+{% for paper in year_group.papers %}
+                        <div class="paper-entry">
+                            <h3 class="paper-title">{{ paper.title | upcase }}</h3>
+{% if paper.authors_single_paragraph %}
+                            <p class="paper-authors">{% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}. <i>{{ paper.venue }}</i>
+                            </p>
+{% else %}
+                            <p class="paper-authors">
+                                {% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}. <i>{{ paper.venue }}</i>
+                            </p>
+{% endif %}
+                            <p class="paper-abstract">
+                                {{ paper.abstract }} <a href="{{ paper.pdf }}" class="download-link"{% if paper.duplicate_download_class %} class="download-link"{% endif %}>Download the paper.</a>
+                            </p>
+                        </div>
+{% endfor %}
+                    </div>
+{% endfor %}
+                </div>

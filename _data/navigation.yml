@@ -1,0 +1,70 @@
+main:
+  - id: home
+    label: "HOME"
+    url: "index.html"
+  - id: publications
+    label: "PUBLICATIONS"
+    url: "publications.html"
+  - id: people
+    label: "PEOPLE"
+    url: "people.html"
+  - id: join
+    label: "JOIN US!"
+    url: "join.html"
+
+projects:
+  - id: home
+    label: "HOME"
+    url: "index.html"
+  - id: projects
+    label: "PROJECTS"
+    url: "projects.html"
+  - id: publications
+    label: "PUBLICATIONS"
+    url: "publications.html"
+  - id: people
+    label: "PEOPLE"
+    url: "people.html"
+  - id: join
+    label: "JOIN US!"
+    url: "join.html"
+
+legacy_news:
+  - id: home
+    label: "HOME"
+    url: "index.html"
+  - id: projects
+    label: "PROJECTS"
+    url: "projects.html"
+  - id: publications
+    label: "PAPERS"
+    url: "publications.html"
+  - id: news
+    label: "NEWS"
+    url: "news.html"
+  - id: people
+    label: "PEOPLE"
+    url: "people.html"
+  - id: join
+    label: "JOIN US!"
+    url: "join.html"
+
+legacy_culture:
+  - id: home
+    label: "HOME"
+    url: "index.html"
+  - id: research
+    label: "RESEARCH"
+    url: "research.html"
+  - id: culture
+    label: "CULTURE"
+    url: "culture.html"
+  - id: publications
+    label: "PAPERS"
+    url: "publications.html"
+  - id: people
+    label: "PEOPLE"
+    url: "people.html"
+  - id: join
+    label: "JOIN US!"
+    url: "join.html"

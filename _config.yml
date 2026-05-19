@@ -1,0 +1,12 @@
+title: High-Performance Human Interfacing Lab
+url: "https://hiphilab.org"
+baseurl: ""
+markdown: kramdown
+theme: null
+plugins: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
