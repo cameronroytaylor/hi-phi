@@ -37,7 +37,7 @@ nav_active: people
 
         <!-- Postdocs and Graduate Students Section -->
         <p class="fw-bold text-start ms-2 ms-md-3">Graduate Students</p>
-        
+
         <div class="d-flex flex-column flex-lg-row align-items-start mb-4">
             <!-- Left Column: Image in a Square Gray Box -->
             <div class="ms-4 me-3">
@@ -71,11 +71,11 @@ nav_active: people
             <!-- Right Column: Text -->
             <div class="text-start mt-3 mt-lg-0">
                 <p>
-                    John is a PhD student in the Hi-PHI Lab. Before joining the UNC and NC State graduate program, he conducted biomechanical tissue research at Spinal Simplicity. He earned his B.S. in Biomedical Engineering from the UNC/NC State BME program in 2024. During his undergraduate career at UNC, John worked on various electronic projects including a laser galvanometer and a smart tourniquet system. His interests lie in tissue biomechanics, continuous wearable sensors, printed circuit board design, and embedded systems. Within the Hi-PHI Lab, John aims to develop bioelectronic equipment and techniques for tissue measurements in humans.
+                    John is a PhD student in the Hi-PHI Lab and a National Science Foundation Graduate Research Fellow. He earned his B.S. in Biomedical Engineering from the UNC–NC State Joint Biomedical Engineering Program in 2025 and his M.S. in Electrical Engineering from NC State in 2026. Before joining the Hi-PHI Lab, he conducted orthopedic biomechanics research at Spinal Simplicity and Arthrex. His interests include wearable bioelectronics, tissue biomechanics, printed circuit board design, and embedded systems. Within the Hi-PHI Lab, John aims to develop bioelectronic equipment and techniques for tissue measurements in humans.
                 </p>
             </div>
         </div>
-        
+
         <!-- Button to join page -->
         <div class="button-wrapper mt-5">
             <span class="button-shadow"></span>
