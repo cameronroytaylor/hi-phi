@@ -1,0 +1,62 @@
+sections:
+  - title: "Principal Investigator (PI)"
+    style: pi
+    members:
+      - name: "Cameron R. Taylor, Ph.D."
+        image: "assets/profile_pictures/crtaylor_profile.png"
+        image_alt: "Cameron R. Taylor, Ph.D"
+        caption_lines:
+          - "Assistant Professor of Biomedical Engineering"
+          - "UNC-Chapel Hill | NC State University"
+          - "Joint Department of Biomedical Engineering"
+        bio:
+          - "Dr. Cameron Taylor develops human interfaces that restore ability in persons with movement disorders resulting from various neuromusculoskeletal factors. During his doctorate at MIT, he developed the first clinically-viable technology for real-time muscle tissue length tracking, from first principles through implantation in human patients. His background is wide ranging, from research in magnetoquasistatics, electromagnetic signal propagation, and algorithm design to neural interfacing and muscle physiology, and his work lives at the intersection of these various fields."
+          - "He is the recipient of the 2023 Promising Investigator Award at the Rocky Mountain Muscle Symposium Pre-Conference Summit, and his research has been featured in various news outlets, including Physics World, Electronic Design, and MIT Technology Review. He can often be found spending time with his family, tinkering with electronics at his workbench, reading a Brandon Sanderson book, cooking focaccia, or trail running in the forest."
+
+  - title: "Graduate Students"
+    style: student
+    members:
+      - name: "Mahavir Prasad"
+        role: "2nd Year, Biomedical Engineering"
+        image: "assets/profile_pictures/mprasad_profile.png"
+        image_alt: "Mahavir Prasad"
+        bio:
+          - "Mahavir is a PhD student and Mansour Graduate Fellow in the Hi-PHI Lab. Before joining UNC and NC State, he worked on high-density EMG systems and brain-computer interfaces at the NeuroMechatronics Lab at Carnegie Mellon University (CMU) and the Rehab Neural Engineering Labs at the University of Pittsburgh. He earned his MS in Artificial Intelligence Engineering - Biomedical Engineering from CMU in 2024. Prior to this, he completed his Bachelor's in Physics with Honors from the University of Delhi and his Master's in Physics from Hemvati Nandan Bahuguna Garhwal University (a Central University) in India. His current research focuses on developing affordable and novel human interfacing technologies to restore movement and sensation in humans."
+
+      - name: "John Goebel"
+        role: "2nd Year, Biomedical Engineering"
+        image: "assets/profile_pictures/jkgoebel_profile.jpeg"
+        image_alt: "John Goebel"
+        bio:
+          - "John is a PhD student and National Science Foundation Graduate Research Fellow in the Hi-PHI Lab. He earned his BS in Biomedical Engineering from the UNC–NC State Joint Biomedical Engineering Program in 2025 and his MS in Electrical Engineering from NC State in 2026. Before joining the Hi-PHI Lab, he conducted orthopedic biomechanics research at Spinal Simplicity and Arthrex. His interests include wearable bioelectronics, tissue biomechanics, printed circuit board design, and embedded systems. Within the Hi-PHI Lab, John aims to develop bioelectronic equipment and techniques for tissue measurements in humans."
+
+      - name: "Aoife Kelly"
+        role: "1st Year, Biomedical Engineering"
+        image: "assets/profile_pictures/kelly_profile.png"
+        image_alt: "Aoife Kelly"
+        bio:
+          - "Aoife is a PhD student and Provost's Doctoral Fellow in the Hi-PHI Lab and an MS student in Electrical Engineering at NC State. She graduated from the UNC/NC State Joint BME Department in 2026. Prior to joining the Hi-PHI Lab, she spent nearly two years conducting research in an animal modeling lab. During her undergraduate career, she served as a teaching assistant for the junior design curriculum, where she taught PCB design and helped develop a novel photolithography process for PCB fabrication. In addition to her academic work, Aoife volunteered for two years as an office aide in the NC Jaycee Burn Center. Her research interests focus on developing novel, low-cost biological imaging systems. Outside the lab, she can often be found roller skating, embroidering, or trying out new recipes in the kitchen."
+
+  - title: "Undergraduate Students"
+    style: student
+    members:
+      - name: "Logan Langford"
+        role: "Senior, Biomedical Engineering"
+        image: "assets/profile_pictures/lblangford_profile.png"
+        image_alt: "Logan Langford"
+        bio:
+          - "Logan is an undergraduate researcher in the Hi-PHI Lab, an Abram's Scholar, and a Sheerer Scholar. He intends to pursue a Ph.D. in Mechanical or Electrical Engineering to advance his ability to conduct rigorous, high-impact research in device and systems innovation. His research interests center on developing technologies that augment human capability, improve physiological function, and enhance overall efficiency. He is particularly drawn to interdisciplinary work that integrates materials science, electronics, and mechanical systems to create translational solutions with measurable societal impact."
+
+      - name: "Cameron Forbush"
+        role: "Senior, Biomedical Engineering"
+        image: "assets/profile_pictures/cforbush_profile.png"
+        image_alt: "Cameron Forbush"
+        bio:
+          - "Cameron is an undergraduate researcher in the Hi-PHI Lab. He is pursuing a B.S. in Biomedical Engineering through the joint UNC/NC State BME program, with an expected graduation of 2027. Within the lab, Cameron is sensor calibration and data visualization strategies. His interests include tracking systems and wearable biosensors."
+
+      - name: "William Hartshorn"
+        role: "Junior, Biomedical Engineering"
+        image: "assets/profile_pictures/whartshorn_profile.png"
+        image_alt: "William Hartshorn"
+        bio:
+          - "William is an undergraduate research assistant in the Hi-PHI Lab, majoring in Biomedical Engineering (2028) and double minoring in Mathematics and Music. His current research interests are in biomedical applications of electromagnetic sensing. Outside the lab, he enjoys classical piano performance and running with his three younger brothers."

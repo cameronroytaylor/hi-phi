@@ -1,0 +1,31 @@
+        <div class="d-flex flex-column flex-lg-row align-items-start mb-4">
+            <!-- Left Column: Image in a Square Box -->
+            <div class="ms-4 me-3">
+{% if include.style == "pi" %}
+                <div class="square-box d-flex flex-column align-items-center justify-content-center">
+{% else %}
+                <div class="square-box d-flex flex-column align-items-center justify-content-center" style="background-color: #f0f0f0;">
+{% endif %}
+                    <img src="{{ include.person.image }}" alt="{{ include.person.image_alt }}" class="img-fluid">
+                    <p class="text-center mt-3">
+                        {{ include.person.name }}<br>
+{%- if include.person.role -%}
+                        {{ include.person.role }}
+{%- elsif include.person.caption_lines -%}
+{%- for line in include.person.caption_lines -%}
+{%- if forloop.last -%}{{ line }}{%- else -%}{{ line }}<br>
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+                    </p>
+                </div>
+            </div>
+            <!-- Right Column: Text -->
+            <div class="text-start mt-3 mt-lg-0">
+{%- for paragraph in include.person.bio -%}
+                <p>
+                    {{ paragraph }}
+                </p>
+{%- endfor -%}
+            </div>
+        </div>

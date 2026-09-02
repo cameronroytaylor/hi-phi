@@ -56,6 +56,10 @@ If you use [rbenv](https://github.com/rbenv/rbenv) or [mise](https://mise.jdx.de
 
 Edit [`_data/publications.yml`](_data/publications.yml): add a new entry under the correct `year` → `papers` list. Author highlighting uses `highlight: true` or the global list in [`_data/lab.yml`](_data/lab.yml). Use `equal_contribution: true` for † markers.
 
+## Adding or updating a lab member
+
+Edit [`_data/people.yml`](_data/people.yml): add a new entry under the appropriate section (`Graduate Students` or `Undergraduate Students`). Each member needs `name`, `role`, `image`, `image_alt`, and `bio` (a list of paragraphs). The PI section uses `caption_lines` instead of `role` and `style: pi` for the Carolina blue profile box.
+
 ## Deploy
 
 Push to `master` on GitHub. Pages builds Jekyll automatically; no separate build step is required.

@@ -1,0 +1,7 @@
+{% for section in site.data.people.sections %}
+        <!-- {{ section.title }} -->
+        <p class="fw-bold text-start ms-2 ms-md-3">{{ section.title }}</p>
+{% for member in section.members %}
+{% include person-entry.html person=member style=section.style %}
+{% endfor %}
+{% endfor %}
