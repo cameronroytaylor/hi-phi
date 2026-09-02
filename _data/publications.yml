@@ -47,7 +47,7 @@ publications_by_year:
           - { name: "Rickard Brånemark" }
           - { name: "Matthew J. Carty" }
           - { name: "Hugh M. Herr" }
-        venue: "(Under Review)"
+        venue: "(In Press)"
         abstract: "Magnetomicrometry provides more accurate and more responsive neuroprosthetic control compared to both surface and implanted electromyography."
         pdf: "https://www.medrxiv.org/content/medrxiv/early/2025/11/22/2025.11.17.25340274.full.pdf"
       - title: "A critical orientation on muscle marker placement: Multiple angles to consider"
@@ -75,7 +75,7 @@ publications_by_year:
           - { name: "Christopher C. Shallal" }
           - { name: "Hugh M. Herr" }
         venue: "Journal of Magnetic Resonance Imaging"
-        abstract: "People with the magnetic implants tested in this study can safely receive MR imaging up to 1.5 T."
+        abstract: "Patients with the magnetic implants that were tested in this study can safely receive MR imaging up to 1.5 T."
         pdf: "assets/publications/mri_safety_magnetic_implants.pdf"
   - year: 2025
     papers:
