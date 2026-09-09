@@ -59,4 +59,11 @@ sections:
         image: "assets/profile_pictures/whartshorn_profile.png"
         image_alt: "William Hartshorn"
         bio:
-          - "William is an undergraduate research assistant in the Hi-PHI Lab, majoring in Biomedical Engineering (2028) and double minoring in Mathematics and Music. His current research interests are in biomedical applications of electromagnetic sensing. Outside the lab, he enjoys classical piano performance and running with his three younger brothers."
+          - "William is an undergraduate researcher in the Hi-PHI Lab, majoring in Biomedical Engineering (2028) and double minoring in Mathematics and Music. His current research interests are in biomedical applications of electromagnetic sensing. Outside the lab, he enjoys classical piano performance and running with his three younger brothers."
+
+      - name: "Shokhjahon (Sha) Berdiyorov"
+        role: "Senior, Biomedical Engineering"
+        image: "assets/profile_pictures/sberdiyorov_profile.png"
+        image_alt: "Shokhjahon (Sha) Berdiyorov"
+        bio:
+          - "Sha is an undergraduate researcher in the Hi-PHI Lab. He is pursuing a B.S. in Biomedical Engineering through the joint UNC/NC State BME program, with an expected graduation of 2027. His current research interests focus on rehabilitation engineering for people with limb differences. Outside the lab, Sha applies his engineering skills to community impact through the Helping Hand Project, where he helps design and 3D print personalized prosthetics for children."

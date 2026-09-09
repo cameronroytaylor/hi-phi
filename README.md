@@ -18,13 +18,17 @@ brew install ruby@3.3
 
 ### Run the site
 
-From the repo root:
+**Easiest (macOS):** double-click [`View Local Site.command`](View%20Local%20Site.command) in Finder. It starts the local server and opens Safari at http://localhost:4000/. Leave the Terminal window open while browsing; press Ctrl+C in that window to stop the server.
+
+**Git / push (macOS):** double-click [`Open Terminal Here.command`](Open%20Terminal%20Here.command) to open a Terminal window already in this folder, then run your usual `git add`, `git commit`, and `git push` commands.
+
+From the terminal (repo root):
 
 ```bash
 ./bin/serve
 ```
 
-Open http://localhost:4000
+Then open http://localhost:4000
 
 To build without serving:
 
