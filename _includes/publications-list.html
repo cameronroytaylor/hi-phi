@@ -8,7 +8,7 @@
 {% capture author_line %}{% include author-list.html authors=paper.authors and_before_last=paper.and_before_last %}{% endcapture %}
                             <p class="paper-authors">{{ author_line | strip }}. <i>{{ paper.venue }}</i></p>
                             <p class="paper-abstract">
-                                {{ paper.abstract }} <a href="{{ paper.pdf }}" class="download-link"{% if paper.duplicate_download_class %} class="download-link"{% endif %}>Download the paper.</a>
+                                {{ paper.abstract }}{% if paper.pdf %} <a href="{{ paper.pdf }}" class="download-link"{% if paper.duplicate_download_class %} class="download-link"{% endif %}>Download the paper.</a>{% endif %}
                             </p>
                         </div>
 {% endfor %}
