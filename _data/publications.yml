@@ -59,6 +59,7 @@ publications_by_year:
           - { name: "Tyler R. Clites" }
         venue: "Mechanism and Machine Theory (In Press)"
         abstract: "Rotary metamorphic flexure bearings extend rotational compliant mechanism benefits with a conventional bearing angular range of motion."
+        pdf: "assets/publications/rotary_metamorphic_flexure_bearings.pdf"
       - title: "An experiment in helping students to collaboratively engineer with AI"
         authors:
           - { name: "Mike Wilkins" }
