@@ -9,7 +9,7 @@ nav_active: join
 <!-- Main Content -->
 <main class="main-content flex-grow-1 d-flex justify-content-center align-items-center text-center">
     <div class="container">
-        <p>We always interested in chatting with potential graduate students, technicians, and postdocs who are <b>passionate</b> about and <b>driven</b> to improve human health by building cutting edge technologies.</p>
+        <p>We are always interested in chatting with potential graduate students, technicians, and postdocs who are <b>passionate</b> about and <b>driven</b> to improve human health by building cutting edge technologies.</p>
 
         <p>Strong candidates for the Hi-PHI Lab have a background in or experience with <b>electronics</b> or <b>electromagnetics</b> or experience with <b>algorithm development</b>, <b>machine learning</b>, or <b>digital signal processing</b>. Applicants should also have a strong interest in working alongside and <b>learning from surgeons</b> and doctors.</p>
 
